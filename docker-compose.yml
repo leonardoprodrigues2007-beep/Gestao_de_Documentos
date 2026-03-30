@@ -1,4 +1,12 @@
 services:
+db: 
+   
+  restart: always
+  enviroment : 
+  MYSQL_DATABASE: backend_database
+  MYSQL_ROOT_PASSWORD: root_password
+  ports:
+  -"3306:3306"
   backend:
     build:
       context: ./backend
