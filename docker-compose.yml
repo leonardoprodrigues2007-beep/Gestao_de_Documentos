@@ -1,6 +1,5 @@
 services:
 db: 
-   
   restart: always
   enviroment : 
   MYSQL_DATABASE: backend_database
